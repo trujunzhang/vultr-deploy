@@ -1,0 +1,12 @@
+* create new deploy user
+** sudo adduser deploy
+** sudo adduser deploy sudo
+** su deploy
+
+* install vpn,nginx(passenger)
+**  wget https://raw.github.com/trujunzhang/vultr-deploy/master/setup.sh
+**  sudo sh setup.sh
+
+* install nginx,mongodb,rvm,pyenv by deploy user
+**  wget https://raw.github.com/trujunzhang/vultr-deploy/master/environment.sh
+**  sh environment.sh
