@@ -6,7 +6,7 @@ eval "$(pyenv init -)"
 source /home/deploy/.rvm/scripts/rvm
 
 alias sbh='cat /home/deploy/.bash_profile'
-alias esh='emacs /home/deploy/.bash_profile'
+alias ebh='emacs /home/deploy/.bash_profile'
 
 alias sow='ls -la'
 
