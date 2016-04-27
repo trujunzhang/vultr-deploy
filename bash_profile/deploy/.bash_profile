@@ -12,6 +12,7 @@ alias sow='ls -la'
 
 alias cdpub='cd /home/deploy/deploy_test/current/public'
 alias cdconf='cd /home/deploy/deploy_test/shared/config'
+alias cdshared='cd /home/deploy/deploy_test/shared'
 
 alias logrs='/home/deploy/deploy_test/current/log/development.log'
 
