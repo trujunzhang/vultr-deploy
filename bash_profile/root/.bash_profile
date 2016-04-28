@@ -8,4 +8,6 @@ alias logng='cat /var/log/nginx/error.log'
 
 alias rootrestart='shutdown -r now'
 
+alias whppt=‘sudo pon hmavpn debug dump logfd 2 nodetach’
+
 
