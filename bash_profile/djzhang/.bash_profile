@@ -5,8 +5,8 @@ eval "$(pyenv init -)"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 source /home/djzhang/.rvm/scripts/rvm
 
-alias sbh='cat /home/djzhang/.bash_profile'
-alias ebh='emacs /home/djzhang/.bash_profile'
+alias sbh='cat $HOME/.bash_profile'
+alias ebh='emacs $HOME/.bash_profile'
 
 alias sow='ls -la'
 
