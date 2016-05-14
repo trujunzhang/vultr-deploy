@@ -23,3 +23,11 @@ alias tcronlog='tail /home/deploy/deploy_test/current/log/cron_log.log'
 
 alias upwhen='whenever --update-crontab'
 alias lswhen='crontab -l'
+
+
+# Cron
+alias lscron='ls /var/spool/cron/'
+alias pscron='ps -aux | grep cron'
+alias dpecron='crontab -u deploy -e'
+alias dplcron='crontab -u deploy -l'
+
