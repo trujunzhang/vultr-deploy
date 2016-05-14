@@ -31,3 +31,6 @@ alias pscron='ps -aux | grep cron'
 alias dpecron='crontab -u deploy -e'
 alias dplcron='crontab -u deploy -l'
 
+
+# echo $TARGETS_HOME
+export TARGETS_HOME=/home/deploy/djzhang-targets
