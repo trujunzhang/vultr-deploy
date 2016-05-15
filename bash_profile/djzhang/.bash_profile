@@ -34,3 +34,11 @@ alias dplcron='crontab -u deploy -l'
 
 # echo $TARGETS_HOME
 export TARGETS_HOME=/home/deploy/djzhang-targets
+
+
+# 45 21 * * * export DISPLAY=:0 && terminal -e 'cd /home/deploy/djzhang-targets/cwgithub && scrapy crawl github'
+# 53 21 * * * export DISPLAY=:0 && xfce4-terminal -e /home/deploy/djzhang-targets/cwgithub/crawling
+
+* * * * * DISPLAY=:0.0 /usr/bin/xfce4-terminal -x 'scrapy crawl github' --working-directory=/home/deploy/djzhang-targets/cwgithub -T 'github'
+
+* * * * * DISPLAY=:0.0 /usr/bin/xfce4-terminal -e "bash -c '/home/deploy/.pyenv/shims/scrapy crawl github;bash'" --working-directory=/home/deploy/djzhang-targets/cwgithub -T 'github'
