@@ -14,7 +14,10 @@ alias cdpub='cd /home/deploy/deploy_test/current/public'
 alias cdconf='cd /home/deploy/deploy_test/shared/config'
 alias cdshared='cd /home/deploy/deploy_test/shared'
 
+alias cdtb='cd /home/deploy/deploy_test/current/public/tb'
+
 alias tlogrs='tail /home/deploy/deploy_test/current/log/development.log'
+alias tlogmg='tail /var/log/mongodb/mongod.log'
 
 alias cpsecrets='cp /home/deploy/rwitunes/config/secrets.yml /home/deploy/deploy_test/shared/config/secrets.yml'
 alias cpmongoid='cp /home/deploy/rwitunes/config/mongoid.yml /home/deploy/deploy_test/shared/config/mongoid.yml'
