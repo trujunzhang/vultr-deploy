@@ -2,6 +2,8 @@
 dir=/tmp/jetbrains
 mkdir -p $dir
 
+tarfile=/tmp/jetbrains.tar.gz
+
 dest=/home/deploy/deploy_test/current/public/tb
 
 wget -O $dir/Webstorm.dmg "https://data.services.jetbrains.com/products/download?code=WS&platform=mac"
@@ -14,10 +16,10 @@ wget -O $dir/AppCode.dmg "https://data.services.jetbrains.com/products/download?
 
 wget -O $dir/Rubymine.dmg "https://data.services.jetbrains.com/products/download?code=RM&platform=mac"
 
-tar -czvf jetbrains.tar.gz -P $dir
+tar -czvf $tarfile -P $dir
 
 if [ -d "$dest" ]; then
-  mv $dir/jetbrains.tar.gz $dest
+  mv $tarfile $dest
 fi
 
 
