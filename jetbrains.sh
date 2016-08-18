@@ -14,9 +14,12 @@ wget -O $dir/AppCode.dmg "https://data.services.jetbrains.com/products/download?
 
 wget -O $dir/Rubymine.dmg "https://data.services.jetbrains.com/products/download?code=RM&platform=mac"
 
-tar -zcf jetbrains.tar.gz $dir #- create the tar
+tar -czvf jetbrains.tar.gz -P $dir
 
 if [ -d "$dest" ]; then
   mv $dir/jetbrains.tar.gz $dest
 fi
+
+
+
 
